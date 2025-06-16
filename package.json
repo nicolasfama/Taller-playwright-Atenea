@@ -1,0 +1,22 @@
+{
+  "name": "taller-playwright-atenea",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasfama/Taller-playwright-Atenea.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolasfama/Taller-playwright-Atenea/issues"
+  },
+  "homepage": "https://github.com/nicolasfama/Taller-playwright-Atenea#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.30"
+  }
+}
