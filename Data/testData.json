@@ -1,0 +1,10 @@
+
+
+{ 
+    
+        "usuarioValido":{
+        "nombre": "nicolas",
+        "apellido": "nicolas",
+        "email": "email@valido.com",
+        "contraseña": "123456"}
+}
