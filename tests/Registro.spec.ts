@@ -34,7 +34,7 @@ test('TC-3 verificar boton de registro se habilita al completar los campos oblig
 test('TC-4 Verificar redireccionamiento a pagina de inicia al hacer click', async ({ page }) => {
 
   await registerPage.Loginbutton.click();
-  await expect(page).toHaveURL('http://localhost:3000/login');
+  await expect(page).toHaveURL('http://localhost:3000/login');     
  
 });   
 test('TC-5 Verificar Registro exitoso', async ({ page }) => {

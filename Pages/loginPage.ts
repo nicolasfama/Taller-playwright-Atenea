@@ -4,13 +4,13 @@ export class Loginpage {
     readonly page: Page;
     readonly emailInput: Locator;
     readonly passwordInput: Locator;
-    readonly loginButton: Locator;
+    readonly Loginbutton: Locator;
 
 constructor(page: Page) {
             this.page =page; 
             this.emailInput = page.locator('input[name="email"]');
             this.passwordInput = page.locator('input[name="password"]');
-            this.loginButton = page.getByTestId('boton-login');
+            this.Loginbutton = page.getByTestId('boton-login');
 }
 
 async visitarPaginaLogin(){
@@ -25,7 +25,7 @@ await this.passwordInput.fill(usuario.contraseña);
 
 }
 async hacerClickBotonLogin(){
-    await this.loginButton.click();
+    await this.Loginbutton.click();
 }
 async completarYHacerClickBotonLogin(usuario: {email: string, contraseña: string}) {
     await this.completarFormulariodeLogin(usuario);

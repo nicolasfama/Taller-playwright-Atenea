@@ -14,7 +14,7 @@ test.beforeEach(async ({ page }) => {
 
 test('TC-7 Verificar inicio de sesion de login con credenciales validas', async ({ page }) => {
   await loginPage.completarYHacerClickBotonLogin(TestData.usuarioValido);
-  await expect(page.getByText('Inicio de sesion exitoso')).toBeVisible();
+ // await expect(page.getByText('Inicio de sesion exitoso')).toBeVisible();
+  await expect(page.locator('text=Inicio de sesión exitoso')).toBeVisible()
   await expect(dashboardPage.dashboardTitle).toBeVisible();
-  await page.pause();
 });
