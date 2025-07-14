@@ -1,4 +1,4 @@
-  import { test, expect,request } from '@playwright/test';
+  import { test, expect, request, Page } from '@playwright/test';
 
   export class BackendUtils {
       readonly page: Page;
@@ -8,19 +8,14 @@
   
   }
   
-  async enviarRequestdeBackend(endpoint: String, data: JSON) {
-  
-     const apiRequestContext = await request.newContext();
-     const response = await apiRequestContext.post(endpoint, {
+  async enviarRequestdeBackend(endpoint: string, data: any) {
+     const response = await this.page.request.post(endpoint, {
         headers: {
         'Accept': 'application/vnd.github.v3+json',
         'Content-Type': 'application/json',
     },
-        data: {
-        firstName: TestData.usuarioValido.nombre,
-        lastName: TestData.usuarioValido.apellido,
-        email: email,
-        password: TestData.usuarioValido.contraseña,
-    }
+        data: data,
   });
   const responseBody = await response.json();
+  return responseBody;
+  }
