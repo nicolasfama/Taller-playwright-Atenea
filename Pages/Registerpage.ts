@@ -8,8 +8,8 @@ export class RegisterPage {
     readonly passwordInput: Locator;
     readonly registerButton: Locator;
     readonly Loginbutton: Locator;
-
-constructor(page: Page) {
+//(esto le da una pauta a typescrip de que esta es una clase que se puede instanciar
+constructor(page: Page) { //)
             this.page =page; 
             this.firstNameInput = page.locator('input[name="firstName"]');
             this.lastNameInput = page.locator('input[name="lastName"]');
