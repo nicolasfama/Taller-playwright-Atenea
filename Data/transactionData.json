@@ -1,0 +1,86 @@
+{
+    "transacciones": [
+        {
+            "id": "TXN001",
+            "usuarioEnvia": {
+                "nombre": "Juan",
+                "apellido": "Pérez",
+                "email": "juan.perez@email.com",
+                "cuentaBancaria": "1234567890",
+                "saldoAnterior": 1500.00
+            },
+            "usuarioRecibe": {
+                "nombre": "María",
+                "apellido": "González",
+                "email": "maria.gonzalez@email.com",
+                "cuentaBancaria": "0987654321",
+                "saldoAnterior": 800.00
+            },
+            "transaccion": {
+                "monto": 250.00,
+                "moneda": "USD",
+                "fecha": "2024-01-15T10:30:00Z",
+                "concepto": "Pago de servicios",
+                "estado": "completada",
+                "comision": 2.50
+            }
+        },
+        {
+            "id": "TXN002",
+            "usuarioEnvia": {
+                "nombre": "Carlos",
+                "apellido": "Rodríguez",
+                "email": "carlos.rodriguez@email.com",
+                "cuentaBancaria": "5555666677",
+                "saldoAnterior": 2000.00
+            },
+            "usuarioRecibe": {
+                "nombre": "Ana",
+                "apellido": "Martínez",
+                "email": "ana.martinez@email.com",
+                "cuentaBancaria": "7777888899",
+                "saldoAnterior": 500.00
+            },
+            "transaccion": {
+                "monto": 100.00,
+                "moneda": "USD",
+                "fecha": "2024-01-16T14:45:00Z",
+                "concepto": "Transferencia personal",
+                "estado": "pendiente",
+                "comision": 1.00
+            }
+        },
+        {
+            "id": "TXN003",
+            "usuarioEnvia": {
+                "nombre": "Luis",
+                "apellido": "Fernández",
+                "email": "luis.fernandez@email.com",
+                "cuentaBancaria": "1111222233",
+                "saldoAnterior": 750.00
+            },
+            "usuarioRecibe": {
+                "nombre": "Sofia",
+                "apellido": "López",
+                "email": "sofia.lopez@email.com",
+                "cuentaBancaria": "3333444455",
+                "saldoAnterior": 1200.00
+            },
+            "transaccion": {
+                "monto": 300.00,
+                "moneda": "USD",
+                "fecha": "2024-01-17T09:15:00Z",
+                "concepto": "Pago de deuda",
+                "estado": "completada",
+                "comision": 3.00
+            }
+        }
+    ],
+    "configuracion": {
+        "comisionMinima": 1.00,
+        "comisionMaxima": 50.00,
+        "porcentajeComision": 0.01,
+        "montoMinimoTransferencia": 10.00,
+        "montoMaximoTransferencia": 10000.00
+    }
+}

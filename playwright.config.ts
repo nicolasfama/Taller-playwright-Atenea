@@ -34,20 +34,24 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    { 
+      name: 'setup',
+      testMatch: /.*\.setup\.ts/ //esto * quiere decir que no me importa lo que halla antes 
+    },
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+      dependencies: ['setup'], // lo que hace la dependencia es   que se ejecute setup antes de chromium
     },
+//      use: { ...devices['Desktop Firefox'] },
+//      dependencies: ['setup'], // Ejecutar setup antes de firefox
+//    },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+//    {
+//      name: 'webkit',
+//      use: { ...devices['Desktop Safari'] },
+//      dependencies: ['setup'], // Ejecutar setup antes de webkit
+//    },
 
     /* Test against mobile viewports. */
     // {
